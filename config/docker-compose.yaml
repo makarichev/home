@@ -1,0 +1,15 @@
+version: '3.0'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server
+    container_name: sql
+    
+    
+    hostname: sql
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=@SsAdmin#
+
+
